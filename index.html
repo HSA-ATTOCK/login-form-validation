@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Login Form</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <form id="loginForm">
+    <h2>Login</h2>
+
+    <label for="email">Email:</label>
+    <input type="text" id="email" />
+    <div id="emailError" class="error"></div>
+
+    <label for="password">Password:</label>
+    <div class="password-container">
+      <input type="password" id="password" />
+      <i id="togglePassword" class="fa-solid fa-eye toggle-password"></i>
+    </div>
+    <div id="passwordError" class="error"></div>
+
+    <label>Department:</label>
+    <label><input type="radio" name="department" value="CS" /> CS</label>
+    <label><input type="radio" name="department" value="BM" /> BM</label>
+    <label><input type="radio" name="department" value="ENG" /> ENG</label>
+
+    <div id="subjectsContainer" style="display: none;">
+    <label>Subjects:</label>
+    <div id="subjectsList" class="subjects-container"></div>
+    <div id="subjectError" class="error"></div>
+    </div>
+
+
+    <div id="subjectsList" class="subjects-container"></div>
+    <div id="subjectError" class="error"></div>
+
+    <button type="submit" id="submitBtn" disabled>Login</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
